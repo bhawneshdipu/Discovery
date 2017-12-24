@@ -1,0 +1,328 @@
+
+#mynav{
+    background-color: red;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;!important;
+
+}
+
+#myfooternav{
+    background-color: red;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;!important;
+    margin-top: 45px;
+
+}
+#nav-container{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    height: 75px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+
+#nav-container-footer{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    height: inherit;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover{
+    color: orange;
+    background: transparent;
+
+}
+.navbar-default .navbar-nav>li>a:hover{
+    color: whitesmoke;
+}
+ul.navbar-nav.pull-right>li>a{
+    color: whitesmoke;
+}
+li>a:hover:after {
+    display:block;
+    content:'';
+    width:100%;
+    height:4px;
+    background:whitesmoke;
+    margin-top:-2px;
+}
+#myCarousel>.carousel-inner > .item > img {
+    width:100%;
+    height:490px;
+}
+
+
+#mysmallCarousel>.carousel-inner > .item > img {
+    width:100%;
+    height:250px;
+}
+
+
+ol.carousel-indicators li{
+    width: 3%;
+    height: 5px;
+    margin: 0;
+    border-radius: 0;
+    background: whitesmoke;
+
+}
+ol.carousel-indicators li.active {
+    width: 3%;
+    height: 5px;
+    margin: 0;
+    border-radius: 0;
+    border: 1px;
+    background: #2bb3ff;
+}
+.carousel-caption { /*override the caption looks*/
+    transition: opacity 0.3s;
+    padding: 20px;
+    border-radius: 20px 20px 0 0;
+    bottom: 8px;
+}
+
+.carousel-caption h3 {
+    font-size: 45px;
+    font-weight: 500;
+
+}
+
+.carousel-caption.small h3 {
+    font-size: 30px;
+    font-weight: 400;
+}
+.carousel-caption p {
+    font-size: 25px;
+    font-weight: 200;
+
+    margin-bottom: 15px;
+}
+.carousel-caption.small p {
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 3%;  /* change this value to required width */
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, 0);
+    filter: alpha(opacity=20);
+    opacity: 0;
+}
+button.btn-link>span{
+    color: white;
+    font-size: 28px;
+}
+
+
+
+/* parallax*/
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+
+.bgimg-0, .bgimg-1, .bgimg-2, .bgimg-3 ,.bgimg-menu{
+    position: relative;
+    opacity: 0.9;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.bgimg-0 {
+    background-image: url("./../pic/DDD_7628.JPG");
+    min-height: 75px;
+
+}
+
+.bgimg-1 {
+    background-image: url("./../pic/DDD_7667.JPG");
+    min-height: 100%;
+
+}
+
+.bgimg-2 {
+    background-image: url("./../pic/DDD_7626.JPG");
+    min-height: 400px;
+}
+
+.bgimg-3 {
+    background-image: url("./../pic/DDD_7628.JPG");
+    min-height: 400px;
+}
+
+.bgimg-menu {
+    background-image: url("./../pic/DDD_7667.JPG");
+    min-height: 100%;
+
+}
+.caption {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 10px;
+    font-size: 25px;
+}
+
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: white;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+
+
+
+
+
+
+
+
+[class*='thumbnail-']{
+    background: #000;
+    width: 100%;
+    height: auto;
+    padding: 0px 0px 0px 0px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+[class*='thumbnail-'] img{
+    max-width: 100%;
+
+}
+
+[class*='thumbnail-']{
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+[class*='thumbnail-']:hover img{
+    transition: .3s linear;
+    transition-delay: 300ms;
+    transform: /* rotate(5deg) */ scale(1.2);
+    border-top-style: double;
+    border-right-style: double;
+    border-left-style: double;
+    border-bottom-style: double;
+}
+
+.table.table-hover>tbody>tr:hover{
+    background-color: #c0a16b;
+}
+
+[class*='thumbnail-'] > .caption{
+    position: absolute;
+    bottom: 0;
+    padding: 0px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+
+}
+
+
+@media screen and (max-width:480px){
+    .caption h3{
+        font-size: 5px;
+    }
+}
+
+
+.carousel-inner .active.left  { left: -33%;             }
+.carousel-inner .active.right { left: 33%;              }
+.carousel-inner .next         { left: 33%               }
+.carousel-inner .prev         { left: -33%              }
+.carousel-control.left        { background: black; max-height: 33%;top:33%;}
+.carousel-control.right       { background: black;max-height: 33%;top:33%; }
+.carousel-inner .item         { background: white;      }
+.carousel-inner{
+
+    border-top: 5px;
+    border-left: 5px;
+    border-right: 5px;
+    border-bottom: 5px;
+    border-color: #fff;
+    border-style: double;
+    background: white;
+}
+/* for text in center verticle and horizontal*/
+/*
+
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    font-family:Arial, sans-serif;
+    font-weight:bolder;
+    font-stretch: extra-expanded;
+    font-style: oblique;
+    font-weight: 400;
+    font-size:80px;
+}
+*/
+
+.carousel-inner .item {
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    transition: opacity ease-out .9s;
+    -webkit-transition: opacity ease-out .9s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.carousel-inner .active {
+    opacity: 1;
+}
+.carousel-inner .active.left,
+.carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+.carousel-inner .next.left,
+.carousel-inner .prev.right {
+    opacity: 1;
+}
+.carousel-control {
+    z-index: 2;
+}
