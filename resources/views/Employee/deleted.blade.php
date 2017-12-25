@@ -37,7 +37,7 @@
         <td>{{$emp->manager_id}}</td>
         <td>{{$emp->desc}}</td>
         <td>{{$emp->is_super}}</td>
-       <td><a class="btn btn-warning" href="/employee/edit/{{$emp->id}}">Edit</a><a class="btn btn-danger" href="/employee/delete/{{$emp->id}}">Delete</a></td>
+       <td><a class="btn btn-danger" href="/employee/recover/{{$emp->id}}">Recover</a></td>
         </tr>
         @endforeach
         @endif

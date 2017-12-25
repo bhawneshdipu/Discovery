@@ -18,6 +18,12 @@ class CreateCategoriesTable extends Migration
             $table->string('name');
             $table->string('pic');
             $table->string('desc');
+            $table->unsignedInteger('manager_id');
+            $table->boolean('active')->default(1);
+            $table->foreign("manager_id")
+                ->references("id")
+                ->on("employees")
+                ->onDelete("CASCADE");
 
         });
     }

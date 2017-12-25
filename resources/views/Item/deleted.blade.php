@@ -17,27 +17,21 @@
     <tr>
         <th>ID</th>
         <th>Name</th>
-        <th>Password</th>
-        <th>Email</th>
-        <th>Mobile</th>
-        <th>Manager_ID</th>
+        <th>Picture</th>
 
+        <th>Manager_ID</th>
         <th>Desc</th>
-        <th>Is Super</th>
         <th>Action</th>
     </tr>
-    @if(isset($employees))
-    @foreach($employees as $emp)
+    @if(isset($items))
+    @foreach($items as $item)
         <tr>
-            <td>{{$emp->id}}</td>
-            <td>{{$emp->name}}</td>
-            <td>{{$emp->password}}</td>
-        <td>{{$emp->email}}</td>
-        <td>{{$emp->mobile}}</td>
-        <td>{{$emp->manager_id}}</td>
-        <td>{{$emp->desc}}</td>
-        <td>{{$emp->is_super}}</td>
-       <td><a class="btn btn-warning" href="/employee/edit/{{$emp->id}}">Edit</a><a class="btn btn-danger" href="/employee/delete/{{$emp->id}}">Delete</a></td>
+            <td>{{$item->id}}</td>
+            <td>{{$item->name}}</td>
+            <td><img src="/storage/{{$item->pic}}" class="img-thumbnail" width="150px" height="90px"></td>
+            <td>{{$item->manager_id}}</td>
+            <td>{{$item->desc}}</td>
+            <td><a class="btn btn-warning" href="/item/recover/{{$item->id}}">Recover</a></td>
         </tr>
         @endforeach
         @endif

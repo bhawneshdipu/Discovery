@@ -17,27 +17,21 @@
     <tr>
         <th>ID</th>
         <th>Name</th>
-        <th>Password</th>
-        <th>Email</th>
-        <th>Mobile</th>
-        <th>Manager_ID</th>
+        <th>Picture</th>
 
+        <th>Manager_ID</th>
         <th>Desc</th>
-        <th>Is Super</th>
         <th>Action</th>
     </tr>
-    @if(isset($employees))
-    @foreach($employees as $emp)
+    @if(isset($categories))
+    @foreach($categories as $cat)
         <tr>
-            <td>{{$emp->id}}</td>
-            <td>{{$emp->name}}</td>
-            <td>{{$emp->password}}</td>
-        <td>{{$emp->email}}</td>
-        <td>{{$emp->mobile}}</td>
-        <td>{{$emp->manager_id}}</td>
-        <td>{{$emp->desc}}</td>
-        <td>{{$emp->is_super}}</td>
-       <td><a class="btn btn-warning" href="/employee/edit/{{$emp->id}}">Edit</a><a class="btn btn-danger" href="/employee/delete/{{$emp->id}}">Delete</a></td>
+            <td>{{$cat->id}}</td>
+            <td>{{$cat->name}}</td>
+            <td><img src="/storage/{{$cat->pic}}" class="img-thumbnail" width="150px" height="90px"></td>
+            <td>{{$cat->manager_id}}</td>
+            <td>{{$cat->desc}}</td>
+            <td><a class="btn btn-warning" href="/category/edit/{{$cat->id}}">Edit</a><a class="btn btn-danger" href="/category/delete/{{$cat->id}}">Delete</a></td>
         </tr>
         @endforeach
         @endif

@@ -11,22 +11,26 @@
 
             <a class="navbar-brand" href="#" style="padding-top: 0px;"><img class="img-round" src="{{URL::to('/')}}/logo/Discovery%20Logo.jpg" width="200px" height="50px"></a>
         </div>
+
+        @if(isset($employee))
+
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav ">
                 <li class="active"><a href="/admin/home">Home</a></li>
-                <li><a href="employee/show">Show Employee</a></li>
+                <li><a href="/employee/show">Employees</a></li>
+                <li><a href="/category/show">Categories</a></li>
+                <li><a href="/order/show">Orders</a></li>
+                <li><a href="/item/show">Items</a></li>
 
             </ul>
-
-            @if($employee)
 
             <ul class="nav navbar nav-pills pull-right">
 
             <li class="active"><label style="font-size: larger;margin-right:20px">{{$employee->name}}</label></li>
-            <li><button href="employee/logout" class="btn btn-sm btn-default">logout</button></li>
+            <li><a href="/employee/logout" class="btn btn-sm btn-default">logout</a></li>
             </ul>
-            @endif
         </div>
+        @endif
 
     </div>
 </nav>

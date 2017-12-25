@@ -25,6 +25,7 @@ class CreateEmployeesTable extends Migration
             $table->string('desc');
             $table->string('is_super');
             $table->timestamp('last_login');
+            $table->boolean('active')->default(true);
             $table->foreign("manager_id")
                     ->references("id")
                     ->on("employees")

@@ -7,9 +7,9 @@
 
 <div class="container" style="margin-top: 180px;width: 100%;">
     <div class="col-lg-12">
-        <h1 class="text-center">Edit Employee</h1>
+        <h1 class="text-center">Recover Employee</h1>
         <div class="col-lg-9">
-            <form class="form-horizontal" action="/employee/update/{{$emp->id}}" method="post">
+            <form class="form-horizontal" action="/employee/recover/{{$emp->id}}" method="post">
 
                 <input type="hidden" name="_token" value="{{ csrf_token() }}" >
 
@@ -72,7 +72,7 @@
                         </select>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-lg pull-right">Submit</button>
+                <button type="submit" class="btn btn-lg pull-right">Recover</button>
             </form>
 
         </div>
