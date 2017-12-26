@@ -35,7 +35,7 @@
 
                     <label for="name" class="col-sm-3">Full Price:</label>
                     <div class="col-sm-9">
-                        <input type="number" class="form-control" id="full_price" name="full_price" value="{{$item->half_price}}" step="0.01"/>
+                        <input type="number" class="form-control" id="full_price" name="full_price" value="{{$item->full_price}}" step="0.01"/>
                     </div>
                 </div>
 

@@ -17,7 +17,7 @@ $(window).scroll(function() {
 
     }
 });
-small-carousel
+
 
 function fun(id){
     var select="";
@@ -59,6 +59,26 @@ function fun(id){
     $('.detail-menu').html(data);
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 var x=0;
 $(document).ready(function () {

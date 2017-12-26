@@ -14,8 +14,27 @@
 use App\Http\Controllers;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Welcome.home');
 });
+
+
+Route::get('/menu','DiscoveryController@menu');
+
+Route::get('/showItems','DiscoveryController@showitems');
+
+
+
+
+
+
+
+
+
+
+
+//employee
+
+
 
 Route::get('/employee/home', 'EmployeeController@home');
 

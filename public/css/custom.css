@@ -326,3 +326,16 @@ h3 {
 .carousel-control {
     z-index: 2;
 }
+
+
+
+.modal-backdrop {
+
+    background-color: transparent !important;
+}
+.modal-transparent .modal-content {
+    background: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
